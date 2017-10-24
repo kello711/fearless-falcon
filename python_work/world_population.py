@@ -7,9 +7,8 @@ with open(filename) as f:
 
 # Print the 2010 popultaion for each country
 for pop_dict in pop_data:
-    if pop_dict['Year'] == '2010':
+    # print(pop_dict)
+    if pop_dict['Year'] == 2010:
         country_name = pop_dict['Country Name']
         population = pop_dict['Value']
-        print(country_name + ": " + population)
-
-print("Done")
+        print(country_name + ": " + str(population))
